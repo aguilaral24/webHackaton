@@ -1,0 +1,69 @@
+#encabezado{
+    width: 100%;
+    background: linear-gradient(to right, rgb(35, 97, 97), #7bafb5);
+    position: absolute;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+}
+
+#cuerpo {
+    width: 100%;
+    z-index: 100;
+    margin: 0;
+    height: 100%;
+    background-image: url("../imgs/derechos_ninios.png");
+    background-size:contain;
+    position: absolute;
+    top: 12%;
+    left: 0;
+}
+canvas {
+    top: 12%;
+    left: 0;
+}
+
+body{
+    background-color: white;
+}
+
+#speedControl{
+    padding-top: 2%;
+}
+
+#speedRange{
+    float: left;
+    display: block;
+}
+
+#speedRangeText{
+    float: left;
+}
+
+#buttonContainer {
+    display: inline-block; /* Alinear el contenedor y la imagen */
+    border-radius: 50%; /* Hacer que el contenedor sea redondo */
+    margin: 1%;
+    margin-top: -1%;
+    display: block;
+}
+
+#pressButton {
+    width: 100px; /* Ajustar el ancho y el alto de la imagen */
+    height: 100px;
+    transition: transform 0.3s ease; /* Agregar transición para suavizar el cambio de estilo */
+    float: left;
+}
+
+#buttonContainer:active #pressButton {
+    transform: scale(0.9); /* Escalar la imagen cuando el contenedor está activo (cuando se hace clic) */
+}
+
+
+#buttonText{
+    float: left;
+    display: block;
+}
+

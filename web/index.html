@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los derechos de los niños y la infancia</title>
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <link rel="stylesheet" href="resources/css/galery-styles.css">
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div id="mainBanner"></div>
+        <div id="intro">
+            <div id="infoUs">
+                <h2>Voces de la Infancia</h2>
+                <p>
+                    Es una propuesta colaborativa diseñada para impactar y educar sobre los derechos fundamentales de los más jóvenes a través de una plataforma visualmente interactiva e innovadora. <br><br>
+                    Este concepto nace de la urgencia evidenciada por los indicadores de REDIM sobre la situación de los derechos de la infancia y adolescencia en México.
+                </p>
+            </div>
+            <div id="infoObjetivo">
+                <h2>Objetivos</h2>
+                <p>
+                    <ul>
+                        <li>Educar a la comunidad sobre los retos actuales que enfrentan los jóvenes en México respecto a sus derechos.</li>
+                        <li>Incentivar el diálogo constructivo entre ciudadanos, así como entre estos y los encargados de formular políticas.</li>
+                        <li>Fomentar la participación ciudadana activa en la defensa y promoción de los derechos de la infancia y adolescencia.</li>
+                    </ul>
+                </p>
+            </div>
+            <div id="infoGalery">
+                <h2>Galería</h2>
+                <p>
+                    <ul>
+                        <li>Creamos una galería que amalgama estética con contenido informativo. El desarrollo de este proyecto es posible gracias al uso de tecnologías como HTML, D3.js, Canvas y R.</li>
+                        <li>Nuestra galería de arte interactiva tiene la misión de transformar la comprensión y reacción del público ante la situación de los derechos de los niños y adolescentes. Más allá de su valor estético, cada pieza servirá como un portal a información esencial, con gráficos y estadísticas actualizados sobre los derechos representados. A través de un clic en la página web incorporada en las obras de arte, los usuarios tendrán acceso directo a un aprendizaje interactivo y en profundidad.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <!-- Galería de imágenes -->
+        <div id="galeryContainer">
+            <div class="galery">               
+                <div class="paint">    
+                    <a class="fadex fadex-reaction" href="pobreza/index.html" data-item="pop1" aria-label="pop up">
+                        <img src="resources/imgs/frame_pobreza.png" alt="Galeria" data-aos="fade-up" style="width: 220px; height: 240px; margin-left: -20%;">
+                    </a>
+                    <div class="tema" style="margin-left: -15%;">Pobreza</div>
+                </div>
+                <div class="paint">    
+                    <a class="fadex fadex-reaction" href="poblacion/mapa.html" data-item="pop2" aria-label="pop up">
+                        <img src="resources/imgs/frame_mapa_ninios.png" alt="Galeria" data-aos="fade-up" style="width: 350px; height: 270px; margin-top: 10%; margin-left: -45%;">
+                    </a>
+                    <div class="tema" style="margin-left: -45%;">Infancia en el mapa</div>
+                </div>
+                <div class="paint">
+                    <a class="fadex fadex-reaction" href="trabajo_inf/index.html" data-item="pop3" aria-label="pop up">
+                        <img src="resources/imgs/frame_trabajo.png" alt="Galeria" data-aos="fade-up" style="width: 310px; height: 250px; margin-left: -80%;">
+                    </a>
+                    <div class="tema" style="margin-left: -80%;">Adultos</div>
+                </div>
+                <div class="paint">    
+                    <a class="fadex fadex-reaction" href="derechos_ninios/index.html" data-item="pop4" aria-label="pop up">
+                        <img src="resources/imgs/frame_derechos_ninios.png" alt="Galeria" data-aos="fade-up" style="width: 350px; height: 250px; margin-left: -30%; margin-top: -15%;">
+                    </a>
+                    <div class="tema" style="margin-left: -30%;">Descubre tus derechos</div>
+                </div>
+                <div class="paint">    
+                    <a class="fadex fadex-reaction" href="arbol_familiar/index.html" data-item="pop5" aria-label="pop up">
+                        <img src="resources/imgs/frame_arbol_familiar.png" alt="Galeria" data-aos="fade-up" style="width: 340px; height: 340px; margin-left: -100%; margin-top: -15%;">
+                    </a>
+                    <div class="tema" style="margin-left: -100%;">Árbol familiar</div>
+                </div>
+                <div class="paint">
+                    <a class="fadex fadex-reaction" href="" data-item="pop6" aria-label="pop up">
+                        <img src="resources/imgs/frame4.png" alt="Galeria" data-aos="fade-up" style="width: 220px; height: 270px; margin-left: -50%; margin-top: -0%;">
+                    </a>
+                    <div class="tema" style="margin-left: -50%;">Tema</div>
+                </div>
+                <div class="paint">
+                    <a class="fadex fadex-reaction" href="" data-item="pop6" aria-label="pop up">
+                        <img src="resources/imgs/frame8.png" alt="Galeria" data-aos="fade-up" style="width: 380px; height: 200px; margin-left: 10%; margin-top: -20%;">
+                    </a>
+                    <div class="tema" style="margin-left: 50%;">Tema</div>
+                </div>
+                <!-- Agrega más imágenes con la misma estructura -->
+            </div>
+        </div>
+    </main>
+
+    <script src="resources/js/masonry.pkgd.js"></script>
+    <script>
+        // Inicializa Masonry cuando el DOM esté listo
+        document.addEventListener("DOMContentLoaded", function() {
+            var elem = document.querySelector(".galery");
+            var msnry = new Masonry(elem, {
+                itemSelector: ".paint",
+                columnWidth: 380,
+                gutter: 70, // Ajusta este valor según sea necesario
+                isFitWidth: true
+            });
+        });
+    </script>
+</body>
+</html>

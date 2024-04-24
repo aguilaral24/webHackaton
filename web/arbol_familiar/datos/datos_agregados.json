@@ -1,0 +1,11 @@
+[
+    { "anio": 2015, "numNinios": 2, "numNinias": 6 },
+    { "anio": 2016, "numNinios": 1, "numNinias": 7 },
+    { "anio": 2017, "numNinios": 1, "numNinias": 4 },
+    { "anio": 2018, "numNinios": 8, "numNinias": 7 },
+    { "anio": 2019, "numNinios": 3, "numNinias": 4 },
+    { "anio": 2020, "numNinios": 10, "numNinias": 13 },
+    { "anio": 2021, "numNinios": 5,  "numNinias": 5 },
+    { "anio": 2022, "numNinios": 17, "numNinias": 11 },
+    { "anio": 2023, "numNinios": 14, "numNinias": 10 }
+  ]

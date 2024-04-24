@@ -1,0 +1,135 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(17, 17, 17);
+}
+
+canvas {
+    display: block;
+}
+
+.nav{
+    position: absolute;
+    margin-top: 1%; 
+    margin-left: 1%;
+}
+
+.navLink{
+  
+    color: pink; 
+    font-size: large;
+}
+
+/*Colapsable*/
+
+.collapsible {
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+    position: absolute;
+    left: 60%;
+    top: 470px;
+    width: 20.5%;
+    border-radius: 4%;
+}
+  
+.collapsible-header {
+    background-color: rgba(255,255,255,0.6);
+    padding: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5% 5% 0 0;
+}
+
+.collapsible-content {
+    display: none;
+    padding: 12px;
+    background-color: rgba(255,255,255,0.2);
+}
+
+.collapsible-content p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.collapsible-content img {
+    margin-right: 30px;
+    width: 25%;
+  }
+
+.collapsible.open .collapsible-content {
+    display: block;
+}
+
+.arrow-up {
+    transform: rotate(180deg);
+ }
+
+.arrow-icon{
+    width: 7%;
+}
+
+/*Title and desc*/
+
+#mapTitle{
+    top:0;
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+#mapDesc{
+    top:50px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+/*Slider*/
+#yearSlider{
+    position: absolute; 
+    top:125px; 
+    right:70px;
+    color: white;
+    width: 18%;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: rgb(188, 192, 192); /* Color de la barra del slider */
+    border-radius: 20px;
+  }
+  
+
+#years_{
+    color: white;
+    top: 155px;
+    right: 30px;
+    display: flex;
+    position: absolute;
+    font-size: x-small;
+}
+
+#years_ option {
+    margin-right: 45px; /* Ajusta el espacio entre las opciones */
+}
+
+/*Check boxes*/
+#impactChecks{
+    position: absolute;
+    top: 190px;
+    right: 68px;
+    display: flex;
+    color: white;
+}  
+
+#impactChecks input{
+    margin-left: 13px;
+}
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+        <title>Derechos de la infancia</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="encabezado">
+        <h1 id="title">¿Sabes cuales son los derechos de los niños?... ¡Descúbrelo!</h1>
+        
+        <div id="buttonContainer">
+            <img id="pressButton" src="imgs/button.png" alt="Botón">
+        </div>
+        <div id="speedControl">
+            <input type="range" id="speedRange" min="1" max="100" value="10" >
+            <label id="speedRangeText" for="speedRange">Velocidad</label>
+        </div>
+    </div>
+    <div id="cuerpo"></div>
+    <canvas id="canvas" style="z-index: 1; position: absolute;"></canvas>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

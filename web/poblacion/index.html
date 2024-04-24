@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Full Screen Canvas</title>
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h1 id="mapTitle">Incendios Forestales en México</h1>
+        <p id="mapDesc">Datos recabados por la CONAFOR a partir de 2015 a 2021. El tamaño de las burbujas representa el total de hectareas afectadas; se tiene un rango de afectación general de <span id="minRange">0.005</span> a <span id="maxRange">23,809</span> hectareas</p>
+        <canvas id="myCanvas"  style="position: absolute; top: 0; left: 0;"></canvas>
+        <canvas id="canvasRef" width="400" height="300" style=" position: absolute; top: 20px; left: 0;"></canvas>
+    </div>
+    <div class="nav">
+        <a class="navLink" href="/mapa.html"> Volver al mapa</a>
+    </div>
+    <input type="range" id="yearSlider" min="2015" max="2021" value="2015" step="1" list="years_">
+    <datalist id="years_">
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+    </datalist>
+    <div id="impactChecks">
+        Impacto:
+        <input type="checkbox" class="Impactcheck" id="minimo" name="categoria" value="minimo">
+        <label for="minimo">mínimo</label><br>
+        <input type="checkbox" class="Impactcheck" id="moderado" name="categoria" value="moderado">
+        <label for="moderado">moderado</label><br>
+        <input type="checkbox" class="Impactcheck" id="severo" name="categoria" value="severo">
+        <label for="severo">severo</label><br>
+      </div>
+    <div class="collapsible" style="top: 400px; left: 1285px;">
+        <div class="collapsible-header" style="z-index: 100;">
+          <span>Marco de Referencia</span>
+          <img src="resources/img/arrow.png" class="arrow-icon">
+        </div>
+        <div class="collapsible-content" style="background-color: rgba(46, 42, 42, 0.9); z-index: -1;">  
+          <p>
+          <img src="resources/img/cu.png" alt="Ciudad Universitaria">
+            750 hect. aprox. <br> C. Universitaria
+          </p>
+          <p>
+            <img src="resources/img/fundidora.png" alt="Parque fundidora">
+              100 hect. aprox. <br> Parque Fundidora
+          </p>     
+          <p>
+            <img src="resources/img/azteca.png" alt="Estadio Azteca">
+              50 hect. aprox. <br> Estadio Azteca
+          </p>
+          <p>
+            <img src="resources/img/auditorio.png" alt="Auditorio Nacional">
+              10 hect. aprox. <br> Auditorio nacional
+          </p>
+          <p>
+            <img src="resources/img/zocalo.png" alt="Zocalo CDMX">
+              5 hect. aprox. <br> Zócalo, CDMX
+          </p>
+          <p>
+            <img src="resources/img/park.png" alt="Parque españa">
+              1 hectarea aprox.<br> Parque España
+          </p>
+            <canvas id="canvasRefBubbles" style="z-index: 1;position:absolute; bottom: -5px; left: 260px;"></canvas>
+          </div>          
+    </div>    
+    <script src="resources/js/canvas.js"></script>
+    <script src="resources/js/data.js"></script>
+    <script src="resources/js/referElements.js"></script>
+    <script src="resources/js/textF.js"></script>
+    <script src="resources/js/main.js"></script>
+    <script src="resources/js/staticInfo.js"></script>
+</body>
+</html>

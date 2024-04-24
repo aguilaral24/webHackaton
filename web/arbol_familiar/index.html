@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopciones de niños en México</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/datos.js"></script>
+</head>
+<body>
+    <canvas id="arbol"></canvas>
+    <canvas id="flores" style="z-index: 10;"></canvas>
+
+    <div class="slider-container">
+        <input type="range" min="2014" max="2023" value="0" class="slider" id="year-slider" list="tickmarks">        
+        <datalist id="tickmarks">
+            <option value="0">---</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+        </datalist>
+    </div>
+    <div id="marcador">
+        <div id="marca_ninios" class="circle">0</div>
+        <div id="marca_ninias" class="circle">0</div>
+    </div>
+
+    <input type="checkbox" id="acum_check" checked onchange="checkboxChanged()">
+    <label id="acum_check_text" for="acum_check">Acumulado</label>
+
+    <script src="js/pasos.js"></script>
+
+
+</body>
+</html>
